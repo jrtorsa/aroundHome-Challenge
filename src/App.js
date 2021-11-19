@@ -1,8 +1,9 @@
+import ScheduleBoard from "./components/ScheduleBoard";
 
 function App() {
   return (
     <div>
-      <h1>cleaning up</h1>
+      <ScheduleBoard />
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import React from 'react'
+import { ReactElement } from 'react'
 
-const DaysBoard = () => {
+const DaysBoard = ():ReactElement => {
   return (
     <div>
       <h1>days board</h1>
