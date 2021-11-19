@@ -1,7 +1,4 @@
 # Around Home Challenge
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -58,7 +55,7 @@ Clone the repo on your local, you will need to have Node JS installed and a Post
    yarn
    ```
 3. Run the client project
-	```sh
+	```
 		npm start
 		or
 		yarn start
