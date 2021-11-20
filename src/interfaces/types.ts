@@ -10,4 +10,5 @@ export interface IData {
 }
 export interface ISchedule {
   schedule: { start_time: string; end_time: string }[];
+  id: number
 }

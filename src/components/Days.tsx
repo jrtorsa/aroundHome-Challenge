@@ -1,7 +1,7 @@
 import '../styles/Days.scss'
 import { ISchedule } from '../interfaces/types'
 
-const Days: React.FC<ISchedule> = ({schedule}) => {
+const Days: React.FC<ISchedule> = ({schedule}, idx) => {
   
   return (
     <div className='days-container'>
