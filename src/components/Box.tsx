@@ -1,11 +1,10 @@
-import { ReactElement } from 'react'
 import '../styles/Box.scss'
 import { IBox } from 'interfaces/types'
 
-const Box = (props: IBox):ReactElement => {
-  const {title} = props
+const Box: React.FC<IBox> = (props) => {
+  const {title, width, height} = props
   return (
-    <div className='box-container'>
+    <div className='box-container' style={{width: !width ? '250px' : width, height: !height ? '80px' : height}}>
       <div>{title}</div>
     </div>
   )

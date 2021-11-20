@@ -1,0 +1,26 @@
+.schedule-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .schedule-company {
+    margin: 5% 5%;
+    width: 15%;
+  }
+
+  .schedule-item-one {
+    margin-bottom: 2%;
+    padding: 3%;
+  }
+  
+  .schedule-item-two {
+    margin-bottom: 15%;
+    padding: 3%;
+  }
+  
+  .schedule-item-three {
+    padding: 3%;
+  }
+}
+

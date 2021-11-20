@@ -1,9 +1,12 @@
-import { ReactElement } from 'react'
+import '../styles/DaysBoard.scss'
+import Box from './Box'
+import Days from './Days'
 
-const DaysBoard = ():ReactElement => {
+const DaysBoard: React.FC = () => {
   return (
-    <div>
-      <h1>days board</h1>
+    <div className='days-board-container'>
+      <div className='days-board-day'><Days /></div>
+      <div className='days-board-time-box'><Box title='inside box' width='200px' height='60px' /></div>
     </div>
   )
 }
