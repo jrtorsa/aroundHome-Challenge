@@ -2,9 +2,17 @@ import '../styles/Box.scss'
 import { IBox } from 'interfaces/types'
 
 const Box: React.FC<IBox> = (props) => {
-  const {title, width, height} = props
+
+  const {backgroundColor, color, height, title, width} = props
+
   return (
-    <div className='box-container' style={{width: !width ? '250px' : width, height: !height ? '80px' : height}}>
+    <div className='box-container' 
+    style={{
+      color: !color ? 'black' : color,
+      backgroundColor: !backgroundColor ? '#fff' : backgroundColor, 
+      height: !height ? '80px' : height, 
+      width: !width ? '250px' : width,
+      }}>
       <div>{title}</div>
     </div>
   )
