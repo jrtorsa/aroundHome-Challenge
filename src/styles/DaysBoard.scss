@@ -1,0 +1,13 @@
+.days-board-container {
+  border: 1px solid black;
+  height: 55vh;
+  width: 250px;
+
+  .days-board-day {
+    padding: 5% 10%;
+  }
+
+  .days-board-time-box {
+    padding: 5% 10%;
+  }
+}
