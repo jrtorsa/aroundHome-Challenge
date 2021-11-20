@@ -3,13 +3,15 @@ import { IBox } from 'interfaces/types'
 
 const Box: React.FC<IBox> = (props) => {
 
-  const {backgroundColor, color, height, title, width} = props
+  const {backgroundColor, border, color, fontWeight, height, title, width} = props
 
   return (
     <div className='box-container' 
     style={{
       color: !color ? 'black' : color,
-      backgroundColor: !backgroundColor ? '#fff' : backgroundColor, 
+      backgroundColor: !backgroundColor ? '#fff' : backgroundColor,
+      border: !border ? '1px solid black' : border,
+      fontWeight: !fontWeight ? '' : fontWeight, 
       height: !height ? '80px' : height, 
       width: !width ? '250px' : width,
       }}>

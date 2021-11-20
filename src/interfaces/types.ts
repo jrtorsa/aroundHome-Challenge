@@ -1,6 +1,8 @@
 export interface IBox {
   color?: string;
-  backgroundColor?: string
+  backgroundColor?: string;
+  border?: string;
+  fontWeight?: string;
   height?: string;
   title?: string;
   width?: string;
