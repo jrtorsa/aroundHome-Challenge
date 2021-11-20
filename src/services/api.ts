@@ -5,6 +5,6 @@ export const API = axios.create({
   responseType: 'json'
 })
 
-export const getData = async () => {
+export const getData = async (): Promise<any> => {
   return await API.get('/data')
 }

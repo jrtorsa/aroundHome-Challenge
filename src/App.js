@@ -4,10 +4,10 @@ import { useData } from './hooks/useData'
 function App() {
 
   const { data } = useData()
-  
+
   return (
     <div>
-      <ScheduleBoard />
+      <ScheduleBoard data={data} />
     </div>
   );
 }
