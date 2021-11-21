@@ -12,5 +12,20 @@ export interface IData {
 }
 export interface ISchedule {
   schedule: { start_time: string; end_time: string }[];
-  id: number
 }
+
+export interface IDays {
+  days: ISelectableDay[]
+  dayClick: (value: string) => void
+}
+
+export interface ISelectableDay {
+  value: string, 
+  label: string
+}
+
+export interface ISlot {
+  start_time: string,
+  end_time: string
+}
+

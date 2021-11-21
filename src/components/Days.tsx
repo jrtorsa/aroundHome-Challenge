@@ -1,11 +1,13 @@
+import { IDays } from '../interfaces/types'
 import '../styles/Days.scss'
-import { ISchedule } from '../interfaces/types'
 
-const Days: React.FC<ISchedule> = ({schedule}, idx) => {
-  
+const Days: React.FC<IDays> = ({days, dayClick}, idx) => {
+
   return (
     <div className='days-container'>
-      <div className='days-container-day'><span>M</span></div>
+      {days.map( (day, i) => (
+        <div className='days-container-day' key={i} onClick={() => dayClick(day.value)}>{day.label}</div>
+      ))}
     </div>
   )
 }
