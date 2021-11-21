@@ -1,7 +1,7 @@
-import { IDays } from '../interfaces/types'
+import { IDays } from '../interfaces'
 import '../styles/Days.scss'
 
-const Days: React.FC<IDays> = ({days, dayClick}, idx) => {
+const Days: React.FC<IDays> = ({days, dayClick}) => {
 
   return (
     <div className='days-container'>

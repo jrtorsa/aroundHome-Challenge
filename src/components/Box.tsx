@@ -1,5 +1,5 @@
 import '../styles/Box.scss'
-import { IBox } from 'interfaces/types'
+import { IBox } from 'interfaces'
 
 const Box: React.FC<IBox> = (props) => {
 
