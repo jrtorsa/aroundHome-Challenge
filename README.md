@@ -29,6 +29,7 @@ This is a simple Reactjs project using CRA (create react app)
 
 ### Built With
 * [React JS](https://reactjs.org/)
+* [json-server](https://www.npmjs.com/package/json-server)
 
 
 
@@ -39,7 +40,7 @@ Clone the repo on your local, you will need to have Node JS installed and a Post
 
 ### Prerequisites
 
-1. 
+1. Have Node installed
 
 ### Installation
 
@@ -55,10 +56,16 @@ Clone the repo on your local, you will need to have Node JS installed and a Post
    yarn
    ```
 3. Run the client project
-	```
-		npm start
-		or
-		yarn start
+	```sh
+	 npm start
+	 or
+	 yarn start
+	``` 
+4. Run the server project
+	```sh
+	 npm run server
+	 or
+	 yarn run server
 	``` 
 
 <!-- LICENSE -->
