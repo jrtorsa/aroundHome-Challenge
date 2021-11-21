@@ -20,6 +20,7 @@ export type ISchedule = {
 export type IDays = {
   days: ISelectableDay[]
   dayClick: (value: string) => void
+  selectedDay: string
 }
 
 export type ISelectableDay = {

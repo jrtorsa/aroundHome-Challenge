@@ -12,31 +12,32 @@ const DaysBoard: React.FC<ISchedule> = ({ schedule, setReload, reload, id }) => 
   const { days, slots } = useDay(schedule, selectedDay, reload);
 
   return (
-    <>
-      <div onClick={() => {blockSlots(); setReload(); setReservation(null)}}>
-        <Box title={reservation ? reservation.title : "Reservation"} backgroundColor={reservation ? 'gray' : '#fff'} />
+    <div className='days-board-container'>
+      <div className='days-board-reservation' onClick={() => {blockSlots(); setReload(); setReservation(null)}}>
+        <Box title={reservation ? reservation.title : "Reservation"} 
+        backgroundColor={reservation ? '#FF8303' : '#fff'}
+        border='none'
+        />
       </div>
-      <div className="days-board-container">
-        <div className="days-board-day">
-          <Days days={days} dayClick={setSelectedDay} />
+        <div className="days-board-schedule-days">
+          <Days days={days} dayClick={setSelectedDay} selectedDay={selectedDay} />
         </div>
+      <div className="days-board-shedule-container">
         {slots.map((slot, i) => {
           const { start_time, end_time, isAvailable } = slot;
-          const title = `${moment(start_time).format("HH:mm A")} - ${moment(
-            end_time
-          ).format("HH:mm A")}`;
+          const title = `${moment(start_time).format("HH:mm A")} - ${moment(end_time).format("HH:mm A")}`;
           return (
             <div
-              className="days-board-time-box"
+              className="days-board-schedule-time-box"
               onClick={() => setReservation({id, title, ...slot })}
               key={i}
             >
-              <Box title={title} backgroundColor={isAvailable ? 'green' : 'red'} width="200px" height="60px" />
+              <Box title={title} backgroundColor={isAvailable ? '#CCEDD2' : '#E5890A'} border='none' width="200px" height="60px" />
             </div>
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,14 +1,28 @@
 .days-board-container {
-  border: 1px solid black;
-  height: 55vh;
-  width: 250px;
-  overflow-y: scroll;
-
-  .days-board-day {
-    padding: 5% 10%;
+  .days-board-reservation{
+    margin-bottom: 15%;
+    :hover {
+      cursor: pointer;
+    }
   }
-
-  .days-board-time-box {
+  .days-board-schedule-days {
+    display: flex;
+    justify-content: center;
     padding: 5% 10%;
+    width: 45%;
+  }
+  .days-board-shedule-container {
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    height: 60vh;
+    width: 250px;
+    overflow-y: scroll;
+  
+    .days-board-schedule-time-box {
+      padding: 5% 10%;
+      :hover {
+        cursor: pointer;
+      }
+    }
   }
 }

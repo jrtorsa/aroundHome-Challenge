@@ -1,9 +1,20 @@
 .days-container {
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
   height: 20px;
-  width: 20px;
+  width: 30px;
 
-  .days-container-day {
+  :hover{
+    cursor: pointer;
+  }
+
+  .days-container-days {
     padding: 5% 18%;
+  }
+  
+  .days-container-day {
+    border-radius: 7.5px;
+    padding: 5% 18%;
+    width: 100%;
   }
 }
