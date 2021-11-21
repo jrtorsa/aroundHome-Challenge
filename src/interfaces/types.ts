@@ -1,33 +1,35 @@
-export interface IBox {
+export type IBox = {
   color?: string;
   backgroundColor?: string;
   border?: string;
   fontWeight?: string;
   height?: string;
   title?: string;
+  reservation?: string;
   width?: string;
 }
-export interface IData {
+export type IData = {
   data: { id: number; name: string; type: string; time_slots: [] }[];
 }
-export interface ISchedule {
+export type ISchedule = {
   schedule: { start_time: string; end_time: string }[];
   setReload: () => void
   reload: boolean
   id: number
 }
 
-export interface IDays {
+export type IDays = {
   days: ISelectableDay[]
   dayClick: (value: string) => void
+  selectedDay: string
 }
 
-export interface ISelectableDay {
+export type ISelectableDay = {
   value: string, 
   label: string
 }
 
-export interface ISlot {
+export type ISlot = {
   start_time: string,
   end_time: string,
   isAvailable?: boolean; 

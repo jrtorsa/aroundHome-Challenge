@@ -1,5 +1,5 @@
 import ScheduleBoard from "./components/ScheduleBoard";
-import { useData } from './hooks/useData'
+import { useData } from './hooks'
 import timezone from 'moment-timezone'
 
 timezone.tz.setDefault('Europe/Berlin')

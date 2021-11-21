@@ -1,25 +1,25 @@
-import { ISelectableDay, ISlot } from 'interfaces/types'
-import moment from 'moment'
+import { ISelectableDay, ISlot } from 'interfaces'
 import { useEffect, useState } from 'react'
+import moment from 'moment'
 
-export const useDay = (schedule: any, dia: any, reload: boolean) => {
+export const useDay = (schedule: any, day: any, reload: boolean) => {
 
   const [days , setDays] = useState<ISelectableDay[]>([])
   const [slots, setSlots] = useState<ISlot[]>([])
 
-  const obtenerDias = (arrDias: any): void => {
-    const datos: Array<string> = arrDias.map((dias: any) => {
-      const numeros = dias.start_time
-      const formato = moment(numeros).format('YYYY-MM-DD')
-      return formato
+  const getFormatedDays = (dayArr: any): void => {
+    const rawData: Array<string> = dayArr.map((days: any) => {
+      const startTime = days.start_time
+      const formatDate = moment(startTime).format('YYYY-MM-DD')
+      return formatDate
     })
-    const formato2 = [...new Set(datos)].map( value => ({value, label: moment(value).format('dd')}))
-    setDays(formato2)
+    const formatDay = [...new Set(rawData)].map( value => ({value, label: moment(value).format('dd')}))
+    setDays(formatDay)
   }
 
-  const diaHora = () => {
+  const timeDateSchedule = () => {
     let dayArr = schedule.filter( ({start_time}: any) => {
-      return moment(dia).diff(moment(start_time.split('T')[0]), 'days') === 0
+      return moment(day).diff(moment(start_time.split('T')[0]), 'days') === 0
     }).map( (val: any) => ( { ...val, isAvailable: true }))
 
       const reservations = localStorage.getItem("reservation");
@@ -43,12 +43,12 @@ export const useDay = (schedule: any, dia: any, reload: boolean) => {
   }
   
   useEffect(() => (
-    obtenerDias(schedule)
+    getFormatedDays(schedule)
   ), [schedule])
 
   useEffect(() => {
-    diaHora()
-  }, [dia, reload])
+    timeDateSchedule()
+  }, [day, reload])
 
   return {
     days,
