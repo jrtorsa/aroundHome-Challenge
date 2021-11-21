@@ -14,6 +14,7 @@ export interface ISchedule {
   schedule: { start_time: string; end_time: string }[];
   setReload: () => void
   reload: boolean
+  id: number
 }
 
 export interface IDays {
@@ -34,5 +35,6 @@ export interface ISlot {
 
 export interface IReservation extends ISlot {
   title: string,
+  id: number
 }
 
