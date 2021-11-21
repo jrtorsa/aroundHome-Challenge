@@ -5,6 +5,7 @@ export type IBox = {
   fontWeight?: string;
   height?: string;
   title?: string;
+  reservation?: string;
   width?: string;
 }
 export type IData = {

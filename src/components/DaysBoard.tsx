@@ -14,8 +14,10 @@ const DaysBoard: React.FC<ISchedule> = ({ schedule, setReload, reload, id }) => 
   return (
     <div className='days-board-container'>
       <div className='days-board-reservation' onClick={() => {blockSlots(); setReload(); setReservation(null)}}>
-        <Box title={reservation ? reservation.title : "Reservation"} 
-        backgroundColor={reservation ? '#FF8303' : '#fff'}
+        <Box title={reservation ? reservation.title : "Please select a Day and Time"} 
+        backgroundColor={reservation ? '#04009A' : '#fff'}
+        color={reservation ? '#fff' : '#132C33'}
+        fontWeight='bold'
         border='none'
         />
       </div>
@@ -32,7 +34,7 @@ const DaysBoard: React.FC<ISchedule> = ({ schedule, setReload, reload, id }) => 
               onClick={() => setReservation({id, title, ...slot })}
               key={i}
             >
-              <Box title={title} backgroundColor={isAvailable ? '#CCEDD2' : '#E5890A'} border='none' width="200px" height="60px" />
+              <Box title={title} backgroundColor={isAvailable ? '#CCEDD2' : '#93B5C6'} color={isAvailable ? '#132C33' : '#93B5C6'} border='none' width="200px" height="60px" />
             </div>
           );
         })}

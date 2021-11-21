@@ -3,7 +3,7 @@ import { IBox } from 'interfaces'
 
 const Box: React.FC<IBox> = (props) => {
 
-  const {backgroundColor, border, color, fontWeight, height, title, width} = props
+  const {backgroundColor, border, color, fontWeight, height, reservation, title, width} = props
 
   return (
     <div className='box-container' 

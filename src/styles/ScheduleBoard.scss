@@ -19,3 +19,48 @@
   }
 }
 
+@media (max-width: 1024px){
+  .schedule-container {
+    flex-wrap: nowrap;
+    .schedule-company {
+      width: 27%
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .schedule-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .schedule-company {
+      width: 40%
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .schedule-container {
+    flex-direction: column;
+
+    .schedule-company {
+      width: 67%
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .schedule-container {
+    .schedule-company {
+      width: 71%
+    }
+  }
+}
+
+@media (max-width: 320px){
+  .schedule-container {
+    .schedule-company {
+      width: 83%
+    }
+  }
+}
+
