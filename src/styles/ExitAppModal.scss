@@ -1,0 +1,45 @@
+.exit-app-modal {
+  
+  button {
+    background-color: #ff3d68;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    width: 100px;
+  }
+}
+
+.exit-modal-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  .exit-modal-ok {
+    background-color: #50cb93;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 3%;
+    height: 50px;
+    width: 40%;
+  }
+  .exit-modal-cancel {
+    background-color: #ff3d68;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 3%;
+    height: 50px;
+    width: 40%;
+  }
+}

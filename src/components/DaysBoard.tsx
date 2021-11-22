@@ -12,8 +12,10 @@ const DaysBoard: React.FC<ISchedule> = ({
   setReload,
   reload,
   id,
+  openModal,
+  setOpenModal
 }) => {
-  const [openModal, setOpenModal] = useState(false);
+  
 
   const {
     blockSlots,
