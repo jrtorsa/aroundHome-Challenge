@@ -5,7 +5,6 @@ export type IBox = {
   fontWeight?: string;
   height?: string;
   title?: string;
-  reservation?: string;
   width?: string;
 }
 export type IData = {
@@ -37,6 +36,12 @@ export type ISlot = {
 
 export interface IReservation extends ISlot {
   title: string,
-  id: number
+  id: number,
 }
 
+export interface IModal{
+  openModal: boolean,
+  setOpenModal: (openModal: boolean) => void,
+  selectedDay: string,
+  reservation: string
+}

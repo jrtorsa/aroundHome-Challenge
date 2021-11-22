@@ -1,0 +1,17 @@
+.confirmation-modal {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  
+  .close-modal{
+    background-color: #50CB93;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+  }
+}

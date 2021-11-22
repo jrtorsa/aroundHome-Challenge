@@ -5,5 +5,6 @@ export type {
   IDays,
   ISelectableDay,
   ISlot,
-  IReservation
+  IReservation,
+  IModal
 } from './types'

@@ -1,8 +1,8 @@
 import Box from './Box'
 import DaysBoard from './DaysBoard'
-import '../styles/ScheduleBoard.scss'
-import { IData } from 'interfaces'
 import { useState } from 'react'
+import { IData } from 'interfaces'
+import '../styles/ScheduleBoard.scss'
 
 const ScheduleBoard: React.FC<IData> = ({data}) => {
 
