@@ -15,6 +15,8 @@ export type ISchedule = {
   setReload: () => void
   reload: boolean
   id: number
+  openModal: boolean
+  setOpenModal: (openModal: boolean) => void
 }
 
 export type IDays = {
@@ -42,6 +44,13 @@ export interface IReservation extends ISlot {
 export interface IModal{
   openModal: boolean,
   setOpenModal: (openModal: boolean) => void,
-  selectedDay: string,
-  reservation: string
+  selectedDay?: string,
+  reservation?: string
+}
+
+export interface IExitModal {
+  openExitModal: boolean
+  setOpenExitModal: (openExitModal: boolean) => void
+  reload: boolean
+  setReload: (reload:boolean) => void
 }
