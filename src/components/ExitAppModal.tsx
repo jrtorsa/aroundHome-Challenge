@@ -18,11 +18,12 @@ const customStyles = {
 const exitApp = (): void => {
   const storage = localStorage.getItem('reservation')
   if(storage){
-    localStorage.clear()
+    localStorage.clear();
+    window.document.location.reload()
   } 
 }
 
-const ExitAppModal: React.FC<IExitModal> = ({openExitModal, setOpenExitModal, setReload, reload}) => {
+const ExitAppModal: React.FC<IExitModal> = ({openExitModal, setOpenExitModal}) => {
   return (
       <div className='exit-app-modal'>
       <button onClick={() => setOpenExitModal(true)}>Exit</button>
@@ -31,7 +32,7 @@ const ExitAppModal: React.FC<IExitModal> = ({openExitModal, setOpenExitModal, se
         <div>
           <h1>Are you sure?</h1>
           <h1>⚠️</h1>
-          <button className='exit-modal-ok' onClick={() => {exitApp(); setOpenExitModal(false); setReload(!reload) }}>OK</button>
+          <button className='exit-modal-ok' onClick={() => {exitApp(); setOpenExitModal(false) }}>OK</button>
           <button className='exit-modal-cancel' onClick={() => setOpenExitModal(false)}>Cancel</button>
         </div>
       </div>

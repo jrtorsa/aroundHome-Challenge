@@ -51,6 +51,4 @@ export interface IModal{
 export interface IExitModal {
   openExitModal: boolean
   setOpenExitModal: (openExitModal: boolean) => void
-  reload: boolean
-  setReload: (reload:boolean) => void
 }

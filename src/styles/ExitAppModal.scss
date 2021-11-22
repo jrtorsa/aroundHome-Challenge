@@ -43,3 +43,36 @@
     width: 40%;
   }
 }
+
+@media (max-width: 1024px){
+  .exit-app-modal {
+    button{
+      right: 5%;
+      top: 90%;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .exit-app-modal {
+    button{
+      top: 95%;
+    }
+  }
+}
+
+@media (max-width: 414px){
+  .exit-app-modal {
+    button{
+      top: 320%;
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .exit-app-modal {
+    button{
+      top: 305%;
+    }
+  }
+}

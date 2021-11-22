@@ -14,7 +14,7 @@ const ScheduleBoard: React.FC<IData> = ({data}) => {
   return (
     <div className='schedule-container'>
       <div>
-        <ExitAppModal openExitModal={openExitModal} setOpenExitModal={setOpenExitModal} reload={reload} setReload={setReload} />
+        <ExitAppModal openExitModal={openExitModal} setOpenExitModal={setOpenExitModal} />
       </div>
       {data.map( ({id, name, time_slots}) => (
         <div className='schedule-company' key={id}>
