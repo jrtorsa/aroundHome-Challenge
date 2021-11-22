@@ -46,7 +46,7 @@ Clone the repo on your local, you will need to have Node JS installed and a Post
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/jrtorsa/aroundHome-Challenge
+   git clone https://github.com/jrtorsa/aroundHome-Challenge.git
    ```
 2. Install NPM packages 
    ```sh
