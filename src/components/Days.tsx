@@ -11,7 +11,7 @@ const Days: React.FC<IDays> = ({days, selectedDay, dayClick}) => {
           <div className='days-container-days' key={i} onClick={() => dayClick(value)}>
             <div className='days-container-day' 
             style={{
-            backgroundColor: selectedDay === value ? '#FF7800' : '#fff',
+            backgroundColor: selectedDay === value ? '#FF7800' : '#F7F7F7',
             color: selectedDay === value ? '#fff' : '#143A52',
             fontWeight: 'bold'
             }}

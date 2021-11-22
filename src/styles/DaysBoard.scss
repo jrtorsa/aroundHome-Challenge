@@ -5,6 +5,12 @@
       cursor: pointer;
     }
   }
+  .days-board-reservation-confirm-msg {
+    color: #0552CD;
+    font-size: 14px;
+    text-align: center;
+  }
+
   .days-board-schedule-days {
     display: flex;
     justify-content: center;
@@ -12,7 +18,7 @@
     width: 45%;
   }
   .days-board-shedule-container {
-    border: 1px solid #EEEEEE;
+    border: 1px solid #D5D5D5;
     border-radius: 8px;
     height: 60vh;
     width: 250px;
